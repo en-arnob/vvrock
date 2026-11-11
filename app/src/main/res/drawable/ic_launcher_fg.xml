@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- speaker -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M36,46h8l10,-9v34l-10,-9h-8z" />
+    <!-- edge bar -->
+    <path android:fillColor="#7FD1FF"
+        android:pathData="M68,34h4a2,2 0,0 1,2 2v36a2,2 0,0 1,-2 2h-4a2,2 0,0 1,-2 -2v-36a2,2 0,0 1,2 -2z" />
+</vector>

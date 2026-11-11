@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VVRock</string>
+    <string name="service_label">VVRock edge volume bar</string>
+    <string name="service_description">Shows a thin, nearly transparent bar on the screen edge. Slide up or down on it to change the volume. It reads no screen content.</string>
+</resources>
