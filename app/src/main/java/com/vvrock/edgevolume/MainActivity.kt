@@ -1,11 +1,14 @@
 package com.vvrock.edgevolume
 
 import android.app.Activity
+import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Intent
 import android.content.SharedPreferences
+import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
+import android.view.Gravity
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.LinearLayout
@@ -73,6 +76,21 @@ class MainActivity : Activity() {
         root.addView(TextView(this).apply {
             text = "\nSlide up = louder, slide down = quieter, tap = show volume panel."
             alpha = 0.7f
+        })
+
+        root.addView(TextView(this).apply {
+            text = "Made with ❤️ by Khalid Utsob"
+            gravity = Gravity.CENTER_HORIZONTAL
+            alpha = 0.75f
+            val pad = (12 * dp).toInt()
+            setPadding(pad, (32 * dp).toInt(), pad, pad)
+            setOnClickListener {
+                try {
+                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://khalidutsob.com")))
+                } catch (_: ActivityNotFoundException) {
+                    // No browser installed; nothing to do.
+                }
+            }
         })
 
         setContentView(ScrollView(this).apply {
